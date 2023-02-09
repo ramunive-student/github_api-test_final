@@ -37,7 +37,7 @@ describe("User verifies github scenarios", async () => {
     expect(topics).to.deep.equal(expectedTopics);
   });
 
-  it("can verify user login details", async () => {
+  it ("can verify user login details", async () => {
     const resp = await api.getUserInfo(process.env.GITUSERNAME);
 
     expect(resp.login).to.equal(process.env.GITUSERNAME);
